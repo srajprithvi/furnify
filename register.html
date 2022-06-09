@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Register | Furnify</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="nav nav_top">
+      <div class="logo">
+        <a href="index.html"><img src="images/1stop 01.png" width="90" /></a>
+      </div>
+      <div class="nav_side">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="blog.html">Blogs</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login/Register</a>
+        <button onclick="dark()" type="button" id="dark"></button>
+        <button onclick="light()" type="button" id="light"></button>
+      </div>
+    </nav>
+    <div class="register">
+      <h2><b>Register</b></h2>
+      <form class="register_form">
+        <div class="container">
+          <label>Fullname:</label>
+          <input
+            type="text"
+            placeholder="Enter fullname"
+            name="name"
+            required
+          />
+          <label>Age:</label>
+          <input
+            type="number"
+            placeholder="Enter your age"
+            name="age"
+            required
+          />
+          <br /><br />
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="MALE" />MALE
+          <input type="radio" name="gender" value="FEMALE" />FEMALE
+          <input type="radio" name="gender" value="OTHERS" />OTHERS<br /><br />
+          <label>Address:</label>
+          <input
+            type="text"
+            name="address"
+            placeholder="Enter your address including landmark and district"
+            required
+          />
+          <label>State:</label>
+          <input
+            type="text"
+            name="state"
+            placeholder="Enter your state"
+            required
+          />
+          <label>Pincode:</label>
+          <input type="text" name="pincode" placeholder="ZIP Code" required />
+          <label>Username:</label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="username"
+            required
+          />
+          <label>Password : </label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            required
+          />
+          <label>Retype password : </label>
+          <input
+            type="password"
+            placeholder="Enter Password again"
+            name="password"
+            required
+          />
+          <div class="container_box">
+            <button type="submit">Register</button>
+            <pre>  <a href="login.html">Back</a></pre>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="footer_logo">
+        <a href="#"><img src="images/1stop 01.png" width="110" /></a>
+      </div>
+      <div class="pages">
+        <h3>Pages</h3>
+        <a href="index.html">Home</a> | <a href="about.html">About Us</a> |
+        <a href="service.html">Servics</a> | <a href="blog.html">Blogs</a> |
+        <a href="login.html">Login</a> |
+        <a href="register.html">Signup</a>
+      </div>
+      <div class="docs">
+        <h3>Documents</h3>
+        <a href="">Privacy Policy</a> | <a href="">Terms of Use</a> |
+        <a href="">Refund policy</a>
+      </div>
+      <div class="social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/s.raj.prithvi/" target="_black"
+          ><i class="fa fa-facebook-official" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/s-prithvi-raj/" target="_black"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.instagram.com/_s_prithvi_raj_/" target="_black"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="tel: +919019956544" target="_black"
+          ><i class="fa fa-phone" aria-hidden="true"></i
+        ></a>
+        <a href="mailto:prithvirajspr2510@gmail.com" target="_black"
+          ><i class="fa fa-envelope" aria-hidden="true"></i
+        ></a>
+        <a href="https://wa.me/919019956544" target="_black"
+          ><i class="fa fa-whatsapp" aria-hidden="true"></i
+        ></a>
+      </div>
+      <hr />
+      <p>Copyright &copy; S Prithvi Raj. All rights reserved</p>
+    </footer>
+  </body>
+</html>

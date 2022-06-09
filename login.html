@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login | Furnify</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="nav nav_top">
+      <div class="logo">
+        <a href="index.html"><img src="images/1stop 01.png" width="90" /></a>
+      </div>
+      <div class="nav_side">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="blog.html">Blogs</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Login/Register</a>
+        <button onclick="dark()" type="button" id="dark"></button>
+        <button onclick="light()" type="button" id="light"></button>
+      </div>
+    </nav>
+    <div class="login">
+      <h2><b>Login</b></h2>
+      <form class="login_form">
+        <div class="container">
+          <label>Username:</label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="username"
+            required
+          />
+          <label>Password : </label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            required
+          />
+          <input type="checkbox" checked="checked" /> Remember me
+          <div class="container_box">
+            <button type="submit">Login</button>
+            <p><a href="password.html"> Forgot password? </a></p>
+          </div>
+          <a href="register.html" id="fp">New user?Register Here</a>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="footer_logo">
+        <a href="#"><img src="images/1stop 01.png" width="110" /></a>
+      </div>
+      <div class="pages">
+        <h3>Pages</h3>
+        <a href="index.html">Home</a> | <a href="about.html">About Us</a> |
+        <a href="service.html">Servics</a> | <a href="blog.html">Blogs</a> |
+        <a href="login.html">Login</a> |
+        <a href="register.html">Signup</a>
+      </div>
+      <div class="docs">
+        <h3>Documents</h3>
+        <a href="">Privacy Policy</a> | <a href="">Terms of Use</a> |
+        <a href="">Refund policy</a>
+      </div>
+      <div class="social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/s.raj.prithvi/" target="_black"
+          ><i class="fa fa-facebook-official" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/s-prithvi-raj/" target="_black"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.instagram.com/_s_prithvi_raj_/" target="_black"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="tel: +919019956544" target="_black"
+          ><i class="fa fa-phone" aria-hidden="true"></i
+        ></a>
+        <a href="mailto:prithvirajspr2510@gmail.com" target="_black"
+          ><i class="fa fa-envelope" aria-hidden="true"></i
+        ></a>
+        <a href="https://wa.me/919019956544" target="_black"
+          ><i class="fa fa-whatsapp" aria-hidden="true"></i
+        ></a>
+      </div>
+      <hr />
+      <p>Copyright &copy; S Prithvi Raj. All rights reserved</p>
+    </footer>
+  </body>
+</html>

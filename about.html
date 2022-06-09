@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About Us | Furnify</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="nav nav_top">
+      <div class="logo">
+        <a href="index.html"><img src="images/1stop 01.png" /></a>
+      </div>
+      <div class="nav_side">
+        <a href="index.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="blog.html">Blogs</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login/Register</a>
+        <button onclick="dark()" type="button" id="dark"></button>
+        <button onclick="light()" type="button" id="light"></button>
+      </div>
+    </nav>
+    <div class="about">
+      <h2>About Us</h2>
+      <div class="about_content">
+        <p>
+          Remaining relevant and competitive, Fast & Free Shipping, Easy
+          Financing, Cash & Carry Options, Focusing on Personalization, Meeting
+          Environmental Concerns, The Need for Remote Office Furniture, Smart
+          Furniture, Tech-Savvy, Fully-Trained Staff, A Larger Focus on
+          Sustainability furnify is a an e-commerce site where you can buy the
+          furniture to your home and you can customize your own furniture if
+          needed. You can explore a variety of furniture needed to your dream
+          houses.
+        </p>
+      </div>
+      <hr />
+      <h2>Our mission</h2>
+      <p>
+        Our vision is to be a leading international furniture manufacturer
+        offering innovative and superior quality products. This statement
+        reflects our purpose and anticipation for the future, inspiring factors
+        that drive us forward in providing the best value-for-money products
+        accompanied by the best service in the industry, right from design to
+        delivery. Our mission is to create Value for our customers through
+        Reliability and Flexibility. We want our customers to experience the
+        warmth and comfort through Respect and Trust. We will achieve our aims
+        through implementing the following values: Focus On Quality - We
+        emphasise on our products quality which requires diligence and
+        dedication. Value For Money - We offer a wide range of well-designed,
+        functional home furniture products at prices many people can enjoy.
+        Satisfy Customers’ Needs - We pay attention to our customers in meeting
+        their preferences and specifications. Build Relationships - We strive to
+        grow relationships with our customers.
+      </p>
+    </div>
+    <div class="feed">
+      <h2>Write a review</h2>
+      <div class="feed_form">
+        <form name="submit-googlesheet" method="post">
+          <input type="text" name="Name" placeholder="Name" /><br />
+          <input type="email" name="Email" placeholder="Email Id" /><br />
+          <input
+            type="number"
+            name="Number"
+            placeholder="Contact Number"
+          /><br />
+          <textarea
+            rows="5"
+            cols="7"
+            name="Review"
+            palceholder="Write your review"
+          ></textarea
+          ><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_logo">
+        <a href="#"><img src="images/1stop 01.png" width="110" /></a>
+      </div>
+      <div class="pages">
+        <h3>Pages</h3>
+        <a href="index.html">Home</a> | <a href="about.html">About Us</a> |
+        <a href="service.html">Servics</a> | <a href="blog.html">Blogs</a> |
+        <a href="login.html">Login</a> |
+        <a href="register.html">Signup</a>
+      </div>
+      <div class="docs">
+        <h3>Documents</h3>
+        <a href="">Privacy Policy</a> | <a href="">Terms of Use</a> |
+        <a href="">Refund policy</a>
+      </div>
+      <div class="social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/s.raj.prithvi/" target="_black"
+          ><i class="fa fa-facebook-official" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/s-prithvi-raj/" target="_black"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.instagram.com/_s_prithvi_raj_/" target="_black"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="tel: +919019956544" target="_black"
+          ><i class="fa fa-phone" aria-hidden="true"></i
+        ></a>
+        <a href="mailto: prithvirajspr2510@gmail.com" target="_black"
+          ><i class="fa fa-envelope" aria-hidden="true"></i
+        ></a>
+        <a href="https://wa.me/919019956544" target="_black"
+          ><i class="fa fa-whatsapp" aria-hidden="true"></i
+        ></a>
+      </div>
+      <hr />
+      <p>Copyright &copy; S Prithvi Raj. All rights reserved</p>
+    </footer>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+   		const scriptURL = 'https://script.google.com/macros/s/AKfycbzUHa4Qy_7TP7RnurtessETeI2J_NRjxXbrxC70BhHZZenDnDjJ0RKSUv11n4P-zVPE/exec'
+		const form = document.forms['submit-googlesheet']
+	  
+		form.addEventListener('submit', e => {
+		  e.preventDefault()
+		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			.then(response => alert("Thank you, for your review, Hope you had great shopping with us."))
+			.catch(error => console.error('Error!', error.message))
+		})
+	</script>
+  </body>
+</html>
